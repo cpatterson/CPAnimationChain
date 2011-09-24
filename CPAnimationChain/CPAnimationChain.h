@@ -24,6 +24,8 @@
 +(CPAnimationChain*)chainWithLinkArray:(NSArray*)linkArray;
 +(CPAnimationChain*)chainWithLinks:(CPAnimationLink*)firstLink, ... NS_REQUIRES_NIL_TERMINATION;
 
++(CPAnimationChain*)alertChain;
+
 -(NSInteger)length;
 -(CPAnimationLink*)linkAtIndex:(NSInteger)index;
 -(CPAnimationLink*)firstLink;

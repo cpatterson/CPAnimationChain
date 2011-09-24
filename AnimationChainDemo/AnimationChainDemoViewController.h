@@ -8,12 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AnimationChainDemoViewController : UIViewController {
-	UIImageView *frog;
-}
-
+@interface AnimationChainDemoViewController : UIViewController 
 @property (nonatomic, retain) IBOutlet UIImageView *frog;
+@property (nonatomic, retain) IBOutlet UIView *alertView;
 
 - (IBAction)animateButtonTapped:(id)sender;
+- (IBAction)dismissAlertView;
 
 @end

@@ -78,6 +78,17 @@
 	return chain;
 }
 
++(CPAnimationChain*)alertChain
+{
+	return [CPAnimationChain chainWithLinks:
+			[CPAndLink andLinks:
+			 [CPScaleToLink scaleWithDuration:0.15 to:1.05],
+			 [CPFadeLink fadeWithDuration:0.15 alpha:1.0],
+			 nil],
+			[CPScaleToLink scaleWithDuration:0.15 to:0.95],
+			[CPScaleToLink scaleWithDuration:0.15 to:1.0],
+			nil];
+}
 
 #pragma mark -
 #pragma mark Instance methods
