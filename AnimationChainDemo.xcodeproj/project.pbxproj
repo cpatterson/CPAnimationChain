@@ -15,7 +15,10 @@
 		9DC63F75141D64180069EC63 /* AnimationChainDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC63F74141D64180069EC63 /* AnimationChainDemoAppDelegate.m */; };
 		9DC63F78141D64180069EC63 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DC63F76141D64180069EC63 /* MainWindow.xib */; };
 		9DC63F7B141D64180069EC63 /* AnimationChainDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC63F7A141D64180069EC63 /* AnimationChainDemoViewController.m */; };
-		9DC63F7E141D64180069EC63 /* AnimationChainDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DC63F7C141D64180069EC63 /* AnimationChainDemoViewController.xib */; };
+		9DC63F87141D65B70069EC63 /* frog.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DC63F86141D65B70069EC63 /* frog.png */; };
+		9DC63F8A141D68EC0069EC63 /* UIView+CPAnimationChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC63F89141D68EC0069EC63 /* UIView+CPAnimationChain.m */; };
+		9DC63F8D141D69750069EC63 /* CPAnimationChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC63F8C141D69750069EC63 /* CPAnimationChain.m */; };
+		9DC63F93141D6BC10069EC63 /* CPAnimationLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC63F92141D6BC10069EC63 /* CPAnimationLink.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +26,22 @@
 		9DC63F64141D64180069EC63 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9DC63F66141D64180069EC63 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9DC63F68141D64180069EC63 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		9DC63F6C141D64180069EC63 /* AnimationChainDemo-Info.plist */ = {isa = PBXFileReference; path = "AnimationChainDemo-Info.plist"; sourceTree = "<group>"; };
+		9DC63F6C141D64180069EC63 /* AnimationChainDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AnimationChainDemo-Info.plist"; sourceTree = "<group>"; };
 		9DC63F6E141D64180069EC63 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9DC63F70141D64180069EC63 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9DC63F72141D64180069EC63 /* AnimationChainDemo-Prefix.pch */ = {isa = PBXFileReference; path = "AnimationChainDemo-Prefix.pch"; sourceTree = "<group>"; };
-		9DC63F73141D64180069EC63 /* AnimationChainDemoAppDelegate.h */ = {isa = PBXFileReference; path = AnimationChainDemoAppDelegate.h; sourceTree = "<group>"; };
+		9DC63F72141D64180069EC63 /* AnimationChainDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AnimationChainDemo-Prefix.pch"; sourceTree = "<group>"; };
+		9DC63F73141D64180069EC63 /* AnimationChainDemoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationChainDemoAppDelegate.h; sourceTree = "<group>"; };
 		9DC63F74141D64180069EC63 /* AnimationChainDemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationChainDemoAppDelegate.m; sourceTree = "<group>"; };
 		9DC63F77141D64180069EC63 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		9DC63F79141D64180069EC63 /* AnimationChainDemoViewController.h */ = {isa = PBXFileReference; path = AnimationChainDemoViewController.h; sourceTree = "<group>"; };
+		9DC63F79141D64180069EC63 /* AnimationChainDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationChainDemoViewController.h; sourceTree = "<group>"; };
 		9DC63F7A141D64180069EC63 /* AnimationChainDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationChainDemoViewController.m; sourceTree = "<group>"; };
-		9DC63F7D141D64180069EC63 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AnimationChainDemoViewController.xib; sourceTree = "<group>"; };
+		9DC63F86141D65B70069EC63 /* frog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frog.png; sourceTree = "<group>"; };
+		9DC63F88141D68EC0069EC63 /* UIView+CPAnimationChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+CPAnimationChain.h"; path = "CPAnimationChain/UIView+CPAnimationChain.h"; sourceTree = "<group>"; };
+		9DC63F89141D68EC0069EC63 /* UIView+CPAnimationChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+CPAnimationChain.m"; path = "CPAnimationChain/UIView+CPAnimationChain.m"; sourceTree = "<group>"; };
+		9DC63F8B141D69750069EC63 /* CPAnimationChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CPAnimationChain.h; path = CPAnimationChain/CPAnimationChain.h; sourceTree = "<group>"; };
+		9DC63F8C141D69750069EC63 /* CPAnimationChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CPAnimationChain.m; path = CPAnimationChain/CPAnimationChain.m; sourceTree = "<group>"; };
+		9DC63F91141D6BC10069EC63 /* CPAnimationLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CPAnimationLink.h; path = CPAnimationChain/CPAnimationLink.h; sourceTree = "<group>"; };
+		9DC63F92141D6BC10069EC63 /* CPAnimationLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CPAnimationLink.m; path = CPAnimationChain/CPAnimationLink.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +61,9 @@
 		9DC63F55141D64180069EC63 = {
 			isa = PBXGroup;
 			children = (
+				9DC63F84141D642D0069EC63 /* CPAnimationChain */,
 				9DC63F6A141D64180069EC63 /* AnimationChainDemo */,
+				9DC63F85141D64A80069EC63 /* Images */,
 				9DC63F63141D64180069EC63 /* Frameworks */,
 				9DC63F61141D64180069EC63 /* Products */,
 			);
@@ -84,7 +95,6 @@
 				9DC63F76141D64180069EC63 /* MainWindow.xib */,
 				9DC63F79141D64180069EC63 /* AnimationChainDemoViewController.h */,
 				9DC63F7A141D64180069EC63 /* AnimationChainDemoViewController.m */,
-				9DC63F7C141D64180069EC63 /* AnimationChainDemoViewController.xib */,
 				9DC63F6B141D64180069EC63 /* Supporting Files */,
 			);
 			path = AnimationChainDemo;
@@ -99,6 +109,28 @@
 				9DC63F72141D64180069EC63 /* AnimationChainDemo-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9DC63F84141D642D0069EC63 /* CPAnimationChain */ = {
+			isa = PBXGroup;
+			children = (
+				9DC63F88141D68EC0069EC63 /* UIView+CPAnimationChain.h */,
+				9DC63F89141D68EC0069EC63 /* UIView+CPAnimationChain.m */,
+				9DC63F8B141D69750069EC63 /* CPAnimationChain.h */,
+				9DC63F8C141D69750069EC63 /* CPAnimationChain.m */,
+				9DC63F91141D6BC10069EC63 /* CPAnimationLink.h */,
+				9DC63F92141D6BC10069EC63 /* CPAnimationLink.m */,
+			);
+			name = CPAnimationChain;
+			sourceTree = "<group>";
+		};
+		9DC63F85141D64A80069EC63 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9DC63F86141D65B70069EC63 /* frog.png */,
+			);
+			name = Images;
+			path = AnimationChainDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,7 +185,7 @@
 			files = (
 				9DC63F6F141D64180069EC63 /* InfoPlist.strings in Resources */,
 				9DC63F78141D64180069EC63 /* MainWindow.xib in Resources */,
-				9DC63F7E141D64180069EC63 /* AnimationChainDemoViewController.xib in Resources */,
+				9DC63F87141D65B70069EC63 /* frog.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +199,9 @@
 				9DC63F71141D64180069EC63 /* main.m in Sources */,
 				9DC63F75141D64180069EC63 /* AnimationChainDemoAppDelegate.m in Sources */,
 				9DC63F7B141D64180069EC63 /* AnimationChainDemoViewController.m in Sources */,
+				9DC63F8A141D68EC0069EC63 /* UIView+CPAnimationChain.m in Sources */,
+				9DC63F8D141D69750069EC63 /* CPAnimationChain.m in Sources */,
+				9DC63F93141D6BC10069EC63 /* CPAnimationLink.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,14 +222,6 @@
 				9DC63F77141D64180069EC63 /* en */,
 			);
 			name = MainWindow.xib;
-			sourceTree = "<group>";
-		};
-		9DC63F7C141D64180069EC63 /* AnimationChainDemoViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9DC63F7D141D64180069EC63 /* en */,
-			);
-			name = AnimationChainDemoViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -286,6 +313,7 @@
 				9DC63F83141D64180069EC63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
