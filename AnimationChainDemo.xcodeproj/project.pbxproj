@@ -44,6 +44,7 @@
 		9DC63F8C141D69750069EC63 /* CPAnimationChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CPAnimationChain.m; path = CPAnimationChain/CPAnimationChain.m; sourceTree = "<group>"; };
 		9DC63F91141D6BC10069EC63 /* CPAnimationLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CPAnimationLink.h; path = CPAnimationChain/CPAnimationLink.h; sourceTree = "<group>"; };
 		9DC63F92141D6BC10069EC63 /* CPAnimationLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CPAnimationLink.m; path = CPAnimationChain/CPAnimationLink.m; sourceTree = "<group>"; };
+		9DF2E19F1430D02F00D957B0 /* README.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +64,7 @@
 		9DC63F55141D64180069EC63 = {
 			isa = PBXGroup;
 			children = (
+				9DF2E19F1430D02F00D957B0 /* README.markdown */,
 				9DC63F84141D642D0069EC63 /* CPAnimationChain */,
 				9DC63F6A141D64180069EC63 /* AnimationChainDemo */,
 				9DC63F85141D64A80069EC63 /* Images */,

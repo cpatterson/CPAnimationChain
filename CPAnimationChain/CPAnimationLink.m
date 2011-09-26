@@ -34,7 +34,7 @@
 		self.delay		= 0.0;
 		self.options	= 0;
 		self.completion	= ^(BOOL finished){
-			NSLog(@"%@ completed", NSStringFromClass([self class]));
+//			NSLog(@"%@ completed", NSStringFromClass([self class]));
 		};
 		[self initAnimation];
     }
