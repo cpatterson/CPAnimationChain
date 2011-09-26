@@ -6,7 +6,7 @@ This project started out with an idea. I wanted an easier, more declarative way 
 
 Say you wanted one of your views to fade in then zoom (scale) out from half its size, to 110% of its size, then shrink slightly back to its normal 100% full size, sort of like the way alert views appear to "pop" out of the screen when they appear. Using pre-iOS 4 SDKs, you would write code that looked like this:
 
-`
+```
 	- (IBAction)showFakeAlertView
 	{
 		self.alertView.transform = CGAffineTransformMakeScale(0.7, 0.7);
@@ -45,7 +45,7 @@ Say you wanted one of your views to fade in then zoom (scale) out from half its 
 		[UIView commitAnimations];
 	}
 
-`
+```
 
 Ugh. Lots of replicated code in separate methods that could be spread out throughout your source file.
 
@@ -53,7 +53,7 @@ Ugh. Lots of replicated code in separate methods that could be spread out throug
 
 Things got better with the official introduction of blocks in iOS 4. At least you could encapsulate all your animations in a single method...
 
-`
+```
 	- (IBAction)showFakeAlertView
 	{
 		self.alertView.transform = CGAffineTransformMakeScale(0.7, 0.7);
@@ -73,13 +73,13 @@ Things got better with the official introduction of blocks in iOS 4. At least yo
 			  }];
 		 }];
 	}
-`
+```
 
 ## The CPAnimationChain Way
 
 I wanted something simpler still. I imagine a set of reusable building blocks of animation, or "chains" of reusable animation "links". Using the CPAnimationChain library, you can simply write:
 
-`
+```
 	- (IBAction)showFakeAlertView
 	{
 		self.alertView.transform = CGAffineTransformMakeScale(0.7, 0.7);
@@ -94,18 +94,18 @@ I wanted something simpler still. I imagine a set of reusable building blocks of
 				nil];
 		[self.alertView animateWithChain:chain];
 	}
-`
+```
 
 ...or, more simply still, using a prefabricated animation chain class:
 
-`
+```
 	- (IBAction)showFakeAlertView
 	{
 		self.alertView.transform = CGAffineTransformMakeScale(0.7, 0.7);
 		self.alertView.alpha = 0.0;
 		[self.alertView animateWithChain:[CPAnimationChain alertChain]];
 	}
-`
+```
 
 Ahhh, that's more like it. A simple class I can call anywhere, anytime, to replicate a given animation sequence.
 
